@@ -33,6 +33,7 @@ function viewCart() {
       }
     }
   }
+  return cartString;
 }
 
 function total() {
