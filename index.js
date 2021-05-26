@@ -20,10 +20,10 @@ function addToCart(item) {
 function viewCart() {
   let cartString = 'In your cart, you have ';
   if(cart.length === 0) {
-    return 'Your shopping cart is empty.';
+    console.log('Your shopping cart is empty.');
   }
   if (cart.length === 1) {
-    return cartString + `${cart[i][itemName]} at ${cart[i][price]}.`;
+    console.log(cartString + `${cart[i][itemName]} at ${cart[i][price]}.`);
   }
 
   if(cart.length > 1) {
@@ -36,7 +36,7 @@ function viewCart() {
       }
     }
   }
-  return cartString;
+  console.log(cartString);
 }
 
 function total() {
